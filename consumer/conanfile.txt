@@ -1,0 +1,10 @@
+[requires]
+Boost/1.64.0@conan/stable
+Poco/1.7.9@pocoproject/stable
+
+[generators]
+cmake
+
+[options]
+Boost:shared=False
+Poco:shared=False

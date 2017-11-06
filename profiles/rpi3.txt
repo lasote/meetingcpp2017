@@ -1,0 +1,17 @@
+TOOLCHAIN_PATH=/Volumes/xtools/armv8-rpi3-linux-gnueabihf
+PRECOMMAND=/Volumes/xtools/armv8-rpi3-linux-gnueabihf/bin/armv8-rpi3-linux-gnueabihf
+SYSROOT=/Volumes/xtools/armv8-rpi3-linux-gnueabihf/armv8-rpi3-linux-gnueabihf/sysroot
+
+[settings]
+os=Linux
+arch=armv8
+compiler=gcc
+compiler.version=5.2
+compiler.libcxx=libstdc++11
+build_type=Release
+
+[env]
+CXX=$PRECOMMAND-g++ --sysroot=$SYSROOT
+CC=$PRECOMMAND-gcc --sysroot=$SYSROOT
+PATH=[$TOOLCHAIN_PATH/bin]
+CHOST=arm-linux-gnueabihf
